@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useEventListener, useOnClickOutside } from 'usehooks-ts'
 import classNames from 'classnames'
 import { CiBellOn } from 'react-icons/ci'
+
 import DropdownNotification from './DropdownNotification'
 
 const DropdownNotifications = () => {
@@ -36,7 +37,7 @@ const DropdownNotifications = () => {
       <div
         ref={dropdown}
         className={classNames(
-          'absolute right-0 mt-2.5 flex h-90 w-75 flex-col rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark sm:w-80',
+          'absolute -right-27 mt-2.5 flex h-90 w-75 flex-col rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark sm:right-0 sm:w-80',
           { ['hidden']: !dropdownOpen, ['block']: !!dropdownOpen }
         )}
       >

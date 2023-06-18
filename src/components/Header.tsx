@@ -6,7 +6,8 @@ import { CiSearch } from 'react-icons/ci'
 import HamburgerButton from './HamburgerButton'
 import DarkModeSwitcher from './DarkModeSwitcher'
 import DropdownNotifications from './DropdownNotifications'
-// import DropdownMessage from './DropdownMessage';
+import DropdownMessages from './DropdownMessages'
+import DropdownUser from './DropdownUser'
 // import DropdownUser from './DropdownUser';
 
 type HeaderProps = {
@@ -61,12 +62,12 @@ const Header: FC<HeaderProps> = ({ sidebarOpen, toggleSidebar }) => {
             {/* <!-- Notification Menu Area --> */}
 
             {/* <!-- Chat Notification Area --> */}
-            {/* <DropdownMessage /> */}
+            <DropdownMessages />
             {/* <!-- Chat Notification Area --> */}
           </ul>
 
           {/* <!-- User Area --> */}
-          {/* <DropdownUser /> */}
+          <DropdownUser />
           {/* <!-- User Area --> */}
         </div>
       </div>
